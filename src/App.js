@@ -4,6 +4,7 @@ import Header from "./components/Layout/Header"
 import MealsList from "./components/Meals/MealsList";
 import "./App.css"
 import Cart from "./components/Cart/Cart";
+import CartProvider from "./store/CartProvider";
 
 const App = () => {
   const [showCart, setShowCart] = useState(false);
@@ -14,17 +15,19 @@ const App = () => {
   
   const onCartCloseHandler = () => {
     setShowCart(false);
-  }
+  } 
 
   return (
     <div className="App">
-      <Header onCartShow={onCartShowHandler} />
-      {showCart && (
-        <Cart items={[]} total={31.95} onClose={onCartCloseHandler} />
-      )}
-      <main>
-        <MealsList />
-      </main>
+      <CartProvider>
+        <Header onCartShow={onCartShowHandler} />
+        {showCart && (
+          <Cart onClose={onCartCloseHandler} />
+        )}
+        <main>
+          <MealsList />
+        </main>
+      </CartProvider> 
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import classes from "./Cart.module.css"
 
 const CartItems = props => {
+  
   return (
     <ol className={classes["cart__items"]}>
       {props.items.map((item) => (

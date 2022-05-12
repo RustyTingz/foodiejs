@@ -18,7 +18,7 @@ const Meal = ({ meal }) => {
         <span>{price}</span>
       </div>
       <div className={classes['meal__actions']}>
-        <CartAddButton id={meal.id} />
+        <CartAddButton id={meal.id} meal={meal} />
       </div>
     </div>
   );
