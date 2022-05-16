@@ -22,7 +22,7 @@ const App = () => {
       <CartProvider>
         <Header onCartShow={onCartShowHandler} />
         {showCart && <Cart onClose={onCartCloseHandler} />}
-        <main>
+        <main className="app-content">
           <MenuContainer />
         </main>
       </CartProvider>
