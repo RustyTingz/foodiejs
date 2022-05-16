@@ -10,7 +10,7 @@ const Menu = () => {
     <section className={classes.menu}>
       {menuCtx.menu &&
         menuCtx.menu.map((menuItem) => (
-          <MenuItemCard key={menuItem.sku} menuItem={menuItem} />
+          <MenuItemCard key={menuItem.id} menuItem={menuItem} />
         ))}
     </section>
   );

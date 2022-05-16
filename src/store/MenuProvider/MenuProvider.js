@@ -17,7 +17,25 @@ const MenuProvider = ({ children }) => {
     });
   }, []);
 
-  return <MenuContext.Provider value={state}>{children}</MenuContext.Provider>;
+  const filterMenuHandler = (filter) => {
+    const action = menuActionFactory.createFilterMenuAction(filter);
+    menuDispatch(action); 
+  }
+
+  const sortMenuHandler = sortBy => {
+    const action = menuActionFactory.createSortMenuAction(sortBy)
+    menuDispatch(action); 
+  }
+
+  const menuContext = {
+    ...state,
+    filterMenu: filterMenuHandler,
+    sortMenu: sortMenuHandler,
+  };
+
+  return (
+    <MenuContext.Provider value={menuContext}>{children}</MenuContext.Provider>
+  );
 };
 
 export default MenuProvider;
