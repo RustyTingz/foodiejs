@@ -1,19 +1,15 @@
-import { useEffect, useState } from "react";
-import { menuApi } from "../../api/menuApi";
+import { useContext } from "react";
+import MenuContext from "../../store/MenuProvider/menu-context";
 import classes from "./Menu.module.css";
 import MenuItemCard from "./MenuItemCard";
 
 const Menu = () => {
-  const [menu, setMenu] = useState([]);
-
-  useEffect(() => {
-    menuApi.getMenu().then((r) => setMenu(r));
-  }, []);
+  const menuCtx = useContext(MenuContext)
 
   return (
     <section className={classes.menu}>
-      {menu &&
-        menu.map((menuItem) => (
+      {menuCtx.menu &&
+        menuCtx.menu.map((menuItem) => (
           <MenuItemCard key={menuItem.sku} menuItem={menuItem} />
         ))}
     </section>
