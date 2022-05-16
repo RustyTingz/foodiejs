@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import ReactDOM from "react-dom"
 import Header from "./components/Layout/Header"
-import MealsList from "./components/Meals/MealsList";
+import MenuContainer from "./components/Menu/MenuContainer";
 import "./App.css"
 import Cart from "./components/Cart/Cart";
 import CartProvider from "./store/CartProvider";
@@ -21,13 +21,11 @@ const App = () => {
     <div className="App">
       <CartProvider>
         <Header onCartShow={onCartShowHandler} />
-        {showCart && (
-          <Cart onClose={onCartCloseHandler} />
-        )}
+        {showCart && <Cart onClose={onCartCloseHandler} />}
         <main>
-          <MealsList />
+          <MenuContainer />
         </main>
-      </CartProvider> 
+      </CartProvider>
     </div>
   );
 };

@@ -10,13 +10,13 @@ const CartAddButton = (props) => {
   const onCartAddHandler = (e) => {
     e.preventDefault();
     ctx.addItem({
-      ...props.meal,
-      quantity: quantity
-    })
+      ...props.menuItem,
+      quantity: quantity,
+    });
   } 
 
   return (
-    <form className={classes['cart__add']} onSubmit={onCartAddHandler }>
+    <form className={classes['cart__add']} onSubmit={onCartAddHandler}>
       <Input
         label="Quantity"
         input={{
