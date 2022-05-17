@@ -1,4 +1,4 @@
-export const menu = [
+export const mockMenu = [
   {
     id: 1718,
     name: "Grilled Vegi Pesto",
@@ -9,27 +9,8 @@ export const menu = [
     description:
       "Grilled courgette & yellow peppers, tomatoes, onions, green & red peppers topped with a pesto drizzle. 211kcal, 885kJ / large slice / classic crust.",
     ingredients: [1, 2, 15, 267, 268],
-    variants: [
-      { skuId: 2129, name: 'Personal 7"', price: 8.49, calories: 651 },
-      {
-        skuId: 2130,
-        name: 'Small 9.5"',
-        price: 16.99,
-        calories: 1020,
-      },
-      {
-        skuId: 2131,
-        name: 'Medium 11.5"',
-        price: 18.99,
-        calories: 1559,
-      },
-      {
-        skuId: 2132,
-        name: 'Large 13.5"',
-        price: 20.99,
-        calories: 2107,
-      },
-    ],
+    price: 8.49,
+    calories: 2107,
   },
   {
     id: 1684,
@@ -41,27 +22,8 @@ export const menu = [
     description:
       "Extra pork meatballs, onions, herbs and mozzarella cheese, drizzled with even more of our signature tomato sauce. 249kcal, 1044kJ / large slice / classic crust.",
     ingredients: [1, 23, 64, 263],
-    variants: [
-      { skuId: 2086, name: 'Personal 7"', price: 8.99, calories: 794 },
-      {
-        skuId: 2087,
-        name: 'Small 9.5"',
-        price: 17.99,
-        calories: 1437,
-      },
-      {
-        skuId: 2088,
-        name: 'Medium 11.5"',
-        price: 19.99,
-        calories: 1980,
-      },
-      {
-        skuId: 2089,
-        name: 'Large 13.5"',
-        price: 21.99,
-        calories: 2486,
-      },
-    ],
+    price: 8.99,
+    calories: 2486,
   },
   {
     id: 1677,
@@ -73,27 +35,8 @@ export const menu = [
     description:
       "Pepperoni, sausage, chorizo, hotdog slices and mozzarella cheese. 252kcal, 1056kJ / large slice / classic crust.",
     ingredients: [3, 5, 66, 224],
-    variants: [
-      { skuId: 2074, name: 'Personal 7"', price: 8.99, calories: 775 },
-      {
-        skuId: 2075,
-        name: 'Small 9.5"',
-        price: 17.99,
-        calories: 1296,
-      },
-      {
-        skuId: 2076,
-        name: 'Medium 11.5"',
-        price: 19.99,
-        calories: 1911,
-      },
-      {
-        skuId: 2077,
-        name: 'Large 13.5"',
-        price: 21.99,
-        calories: 2515,
-      },
-    ],
+    price: 8.99,
+    calories: 2515,
   },
   {
     id: 1594,
@@ -105,27 +48,8 @@ export const menu = [
     description:
       "Double ground beef with fresh tomatoes, onions, sliced gherkins and drizzled with our special burger sauce. 236kcal, 992kJ / large slice / classic crust.",
     ingredients: [1, 8, 15, 254, 255],
-    variants: [
-      { skuId: 1917, name: 'Personal 7"', price: 8.49, calories: 698 },
-      {
-        skuId: 1918,
-        name: 'Small 9.5"',
-        price: 16.99,
-        calories: 1016,
-      },
-      {
-        skuId: 1919,
-        name: 'Medium 11.5"',
-        price: 18.99,
-        calories: 1743,
-      },
-      {
-        skuId: 1920,
-        name: 'Large 13.5"',
-        price: 20.99,
-        calories: 2363,
-      },
-    ],
+    price: 8.49,
+    calories: 2363,
   },
   {
     id: 1585,
@@ -137,27 +61,8 @@ export const menu = [
     description:
       "Pepperoni, ham, chorizo, pork meatballs and smoked bacon rashers. 262kcal, 1101kJ / large slice / classic crust.",
     ingredients: [3, 6, 18, 64, 66],
-    variants: [
-      { skuId: 1904, name: 'Personal 7"', price: 8.99, calories: 837 },
-      {
-        skuId: 1905,
-        name: 'Small 9.5"',
-        price: 17.99,
-        calories: 1192,
-      },
-      {
-        skuId: 1906,
-        name: 'Medium 11.5"',
-        price: 19.99,
-        calories: 1973,
-      },
-      {
-        skuId: 1907,
-        name: 'Large 13.5"',
-        price: 21.99,
-        calories: 2622,
-      },
-    ],
+    price: 8.99,
+    calories: 2622,
   },
   {
     id: 1500,
@@ -169,22 +74,8 @@ export const menu = [
     description:
       "Our original Cheese & Tomato pizza with even more cheese. 217kcal, 912kJ / large slice / classic crust.",
     ingredients: [],
-    variants: [
-      { skuId: 1765, name: 'Personal 7"', price: 5.99, calories: 637 },
-      { skuId: 1764, name: 'Small 9.5"', price: 12.99, calories: 909 },
-      {
-        skuId: 1763,
-        name: 'Medium 11.5"',
-        price: 14.99,
-        calories: 1614,
-      },
-      {
-        skuId: 1762,
-        name: 'Large 13.5"',
-        price: 16.99,
-        calories: 2171,
-      },
-    ],
+    price: 5.99,
+    calories: 2171,
   },
   {
     id: 15,
@@ -196,17 +87,8 @@ export const menu = [
     description:
       "Pepperoni, ham, ground beef, sausage, onions, mushrooms and mozzarella cheese. 247kcal, 1038kJ / large slice / classic crust.",
     ingredients: [1, 3, 5, 7, 8, 18],
-    variants: [
-      { skuId: 463, name: 'Personal 7"', price: 8.49, calories: 729 },
-      { skuId: 4, name: 'Small 9.5"', price: 16.99, calories: 1106 },
-      {
-        skuId: 29,
-        name: 'Medium 11.5"',
-        price: 18.99,
-        calories: 1860,
-      },
-      { skuId: 54, name: 'Large 13.5"', price: 20.99, calories: 2471 },
-    ],
+    price: 8.49,
+    calories: 2471,
   },
   {
     id: 18,
@@ -218,17 +100,8 @@ export const menu = [
     description:
       "Extra pepperoni and extra mozzarella cheese on a Foodies tomato sauce base. 264kcal, 1110kJ / large slice / classic crust.",
     ingredients: [3],
-    variants: [
-      { skuId: 466, name: 'Personal 7"', price: 7.99, calories: 788 },
-      { skuId: 7, name: 'Small 9.5"', price: 15.99, calories: 1205 },
-      {
-        skuId: 32,
-        name: 'Medium 11.5"',
-        price: 17.99,
-        calories: 1988,
-      },
-      { skuId: 57, name: 'Large 13.5"', price: 19.99, calories: 2642 },
-    ],
+    price: 7.99,
+    calories: 2642,
   },
   {
     id: 17,
@@ -239,17 +112,8 @@ export const menu = [
     description:
       "Tangy bbq sauce topped with smoky bacon, chicken breast strips, onions, green and red peppers. 231kcal, 970kJ / large slice / classic crust.",
     ingredients: [1, 2, 6, 20],
-    variants: [
-      { skuId: 465, name: 'Personal 7"', price: 7.99, calories: 727 },
-      { skuId: 6, name: 'Small 9.5"', price: 15.99, calories: 1149 },
-      {
-        skuId: 31,
-        name: 'Medium 11.5"',
-        price: 17.99,
-        calories: 1748,
-      },
-      { skuId: 56, name: 'Large 13.5"', price: 19.99, calories: 2309 },
-    ],
+    price: 7.99,
+    calories: 2309,
   },
   {
     id: 24,
@@ -261,17 +125,8 @@ export const menu = [
     description:
       "Onions, green and red peppers, sweetcorn, mushrooms, tomatoes. 202kcal, 848kJ / large slice / classic crust.",
     ingredients: [1, 2, 4, 7, 15],
-    variants: [
-      { skuId: 469, name: 'Personal 7"', price: 7.99, calories: 615 },
-      { skuId: 10, name: 'Small 9.5"', price: 15.99, calories: 842 },
-      {
-        skuId: 35,
-        name: 'Medium 11.5"',
-        price: 17.99,
-        calories: 1494,
-      },
-      { skuId: 60, name: 'Large 13.5"', price: 19.99, calories: 2018 },
-    ],
+    price: 7.99,
+    calories: 2018,
   },
   {
     id: 1046,
@@ -283,17 +138,8 @@ export const menu = [
     description:
       "Onions, pepperoni, jalapeño peppers. 233kcal, 979kJ / large slice / classic crust.",
     ingredients: [1, 3, 10],
-    variants: [
-      { skuId: 488, name: 'Personal 7"', price: 8.49, calories: 700 },
-      { skuId: 355, name: 'Small 9.5"', price: 16.99, calories: 1032 },
-      {
-        skuId: 356,
-        name: 'Medium 11.5"',
-        price: 18.99,
-        calories: 1751,
-      },
-      { skuId: 357, name: 'Large 13.5"', price: 20.99, calories: 2331 },
-    ],
+    price: 8.49,
+    calories: 2331,
   },
   {
     id: 55,
@@ -305,17 +151,8 @@ export const menu = [
     description:
       "Chicken, mushrooms, sweetcorn. 210kcal, 883kJ / large slice / classic crust.",
     ingredients: [4, 7, 20],
-    variants: [
-      { skuId: 480, name: 'Personal 7"', price: 8.49, calories: 637 },
-      { skuId: 20, name: 'Small 9.5"', price: 16.99, calories: 882 },
-      {
-        skuId: 45,
-        name: 'Medium 11.5"',
-        price: 18.99,
-        calories: 1565,
-      },
-      { skuId: 70, name: 'Large 13.5"', price: 20.99, calories: 2103 },
-    ],
+    price: 8.49,
+    calories: 2103,
   },
   {
     id: 23,
@@ -323,43 +160,24 @@ export const menu = [
     category: "Pizza",
     subCategory: "Speciality Pizzas",
     image:
-      "/images/1907-PIZ-American-Hot.jpg?v=524490372ba23ffb37ab9be0571013e9",
+      "/images/1907-PIZ-Tandoori-Hot.jpg?v=524490372ba23ffb37ab9be0571013e9",
     description:
       "Tandoori chicken, onions, mushrooms, green and red peppers, jalapeño peppers. 208kcal, 872kJ / large slice / classic crust.",
     ingredients: [1, 2, 7, 10, 12],
-    variants: [
-      { skuId: 468, name: 'Personal 7"', price: 7.99, calories: 631 },
-      { skuId: 9, name: 'Small 9.5"', price: 15.99, calories: 872 },
-      {
-        skuId: 34,
-        name: 'Medium 11.5"',
-        price: 17.99,
-        calories: 1545,
-      },
-      { skuId: 59, name: 'Large 13.5"', price: 19.99, calories: 2077 },
-    ],
+    price: 7.99,
+    calories: 2077,
   },
   {
     id: 1052,
     name: "Hawaiian",
     category: "Pizza",
     subCategory: "Speciality Pizzas",
-    image:
-      "/images/1907-PIZ-American-Hot.jpg?v=77814d314a14f2c10b486e8c52996388",
+    image: "/images/1907-PIZ-Hawaiian.jpg?v=77814d314a14f2c10b486e8c52996388",
     description:
       "Ham, pineapple, mushrooms. 208kcal, 874kJ / large slice / classic crust.",
     ingredients: [7, 14, 18],
-    variants: [
-      { skuId: 492, name: 'Personal 7"', price: 7.99, calories: 634 },
-      { skuId: 373, name: 'Small 9.5"', price: 15.99, calories: 882 },
-      {
-        skuId: 374,
-        name: 'Medium 11.5"',
-        price: 17.99,
-        calories: 1555,
-      },
-      { skuId: 375, name: 'Large 13.5"', price: 19.99, calories: 2082 },
-    ],
+    price: 7.99,
+    calories: 2082,
   },
   {
     id: 14,
@@ -367,43 +185,24 @@ export const menu = [
     category: "Pizza",
     subCategory: "Speciality Pizzas",
     image:
-      "/images/1907-PIZ-American-Hot.jpg?v=94699db5c550982df400eaf8fb15a1bb",
+      "/images/1907-PIZ-Hot-and-Spicy.jpg?v=94699db5c550982df400eaf8fb15a1bb",
     description:
       "Ground beef, onions, green and red peppers, jalapeño peppers. 210kcal, 880kJ / large slice / classic crust.",
     ingredients: [1, 2, 8, 10],
-    variants: [
-      { skuId: 462, name: 'Personal 7"', price: 7.99, calories: 635 },
-      { skuId: 3, name: 'Small 9.5"', price: 15.99, calories: 882 },
-      {
-        skuId: 28,
-        name: 'Medium 11.5"',
-        price: 17.99,
-        calories: 1550,
-      },
-      { skuId: 53, name: 'Large 13.5"', price: 19.99, calories: 2095 },
-    ],
+    price: 7.99,
+    calories: 2095,
   },
   {
     id: 1105,
     name: "Meateor™",
     category: "Pizza",
     subCategory: "Speciality Pizzas",
-    image:
-      "/images/1907-PIZ-American-Hot.jpg?v=a0dbb8bd83ca16d528b991f7653c771a",
+    image: "/images/1907-PIZ-Meateor.jpg?v=a0dbb8bd83ca16d528b991f7653c771a",
     description:
       "A light portion of BBQ sauce topped with pork meatballs, ground beef, sausage, pepperoni, smoky bacon. 274kcal, 1152kJ / large slice / classic crust.",
     ingredients: [3, 5, 6, 8, 64],
-    variants: [
-      { skuId: 550, name: 'Personal 7"', price: 9.49, calories: 898 },
-      { skuId: 551, name: 'Small 9.5"', price: 18.99, calories: 1406 },
-      {
-        skuId: 552,
-        name: 'Medium 11.5"',
-        price: 20.99,
-        calories: 2093,
-      },
-      { skuId: 553, name: 'Large 13.5"', price: 22.99, calories: 2742 },
-    ],
+    price: 9.49,
+    calories: 2742,
   },
   {
     id: 1358,
@@ -415,27 +214,8 @@ export const menu = [
     description:
       "Pepperoni, ham, chicken breast strips, smoked bacon rashers, sausage. 235kcal, 988kJ / large slice / classic crust.",
     ingredients: [3, 5, 6, 18, 20],
-    variants: [
-      { skuId: 1525, name: 'Personal 7"', price: 9.49, calories: 763 },
-      {
-        skuId: 1518,
-        name: 'Small 9.5"',
-        price: 18.99,
-        calories: 1051,
-      },
-      {
-        skuId: 1519,
-        name: 'Medium 11.5"',
-        price: 20.99,
-        calories: 1772,
-      },
-      {
-        skuId: 1520,
-        name: 'Large 13.5"',
-        price: 22.99,
-        calories: 2352,
-      },
-    ],
+    price: 9.49,
+    calories: 2352,
   },
   {
     id: 39,
@@ -446,17 +226,8 @@ export const menu = [
     description:
       "Pepperoni, ham, bacon, mushrooms. 238kcal, 1000kJ / large slice / classic crust.",
     ingredients: [3, 6, 7, 18],
-    variants: [
-      { skuId: 475, name: 'Personal 7"', price: 8.99, calories: 718 },
-      { skuId: 16, name: 'Small 9.5"', price: 17.99, calories: 1066 },
-      {
-        skuId: 41,
-        name: 'Medium 11.5"',
-        price: 19.99,
-        calories: 1791,
-      },
-      { skuId: 66, name: 'Large 13.5"', price: 21.99, calories: 2380 },
-    ],
+    price: 8.99,
+    calories: 2380,
   },
   {
     id: 1474,
@@ -467,27 +238,8 @@ export const menu = [
     description:
       "BBQ sauce, chicken breast strips, pepperoni, ground beef, bacon. 264kcal, 1108kJ / large slice / classic crust.",
     ingredients: [3, 6, 8, 20],
-    variants: [
-      { skuId: 1709, name: 'Personal 7"', price: 9.49, calories: 788 },
-      {
-        skuId: 1710,
-        name: 'Small 9.5"',
-        price: 18.99,
-        calories: 1322,
-      },
-      {
-        skuId: 1711,
-        name: 'Medium 11.5"',
-        price: 20.99,
-        calories: 1994,
-      },
-      {
-        skuId: 1712,
-        name: 'Large 13.5"',
-        price: 22.99,
-        calories: 2637,
-      },
-    ],
+    price: 9.49,
+    calories: 2637,
   },
   {
     id: 175,
@@ -498,17 +250,8 @@ export const menu = [
     description:
       "Sundried tomato and garlic sauce, pepperoni, tandoori chicken, onions, jalapeño peppers, herbs. 244kcal, 1024kJ / large slice / classic crust.",
     ingredients: [1, 3, 10, 12, 23],
-    variants: [
-      { skuId: 483, name: 'Personal 7"', price: 9.49, calories: 712 },
-      { skuId: 23, name: 'Small 9.5"', price: 18.99, calories: 1307 },
-      {
-        skuId: 48,
-        name: 'Medium 11.5"',
-        price: 20.99,
-        calories: 1798,
-      },
-      { skuId: 73, name: 'Large 13.5"', price: 22.99, calories: 2437 },
-    ],
+    price: 9.49,
+    calories: 2437,
   },
   {
     id: 34,
@@ -519,17 +262,8 @@ export const menu = [
     description:
       "Sundried tomato and garlic sauce, onions, mushrooms, green and red peppers, herbs. 212kcal, 892kJ / large slice / classic crust.",
     ingredients: [1, 2, 7, 23],
-    variants: [
-      { skuId: 473, name: 'Personal 7"', price: 7.99, calories: 646 },
-      { skuId: 14, name: 'Small 9.5"', price: 15.99, calories: 1128 },
-      {
-        skuId: 39,
-        name: 'Medium 11.5"',
-        price: 17.99,
-        calories: 1549,
-      },
-      { skuId: 64, name: 'Large 13.5"', price: 19.99, calories: 2124 },
-    ],
+    price: 7.99,
+    calories: 2124,
   },
   {
     id: 59,
@@ -541,17 +275,8 @@ export const menu = [
     description:
       "Onions, green and red peppers, tomatoes, jalapeño peppers, extra mozzarella cheese. 231kcal, 971kJ / large slice / classic crust.",
     ingredients: [1, 2, 10, 15],
-    variants: [
-      { skuId: 482, name: 'Personal 7"', price: 7.99, calories: 683 },
-      { skuId: 22, name: 'Small 9.5"', price: 15.99, calories: 1205 },
-      {
-        skuId: 47,
-        name: 'Medium 11.5"',
-        price: 17.99,
-        calories: 1689,
-      },
-      { skuId: 72, name: 'Large 13.5"', price: 19.99, calories: 2313 },
-    ],
+    price: 7.99,
+    calories: 2313,
   },
   {
     id: 1708,
@@ -563,14 +288,8 @@ export const menu = [
     description:
       "Vegan soya & wheat pepperoni with a vegan cheese alternative. 173kcal, 728kJ / medium slice / vegan classic crust.",
     ingredients: [266],
-    variants: [
-      {
-        skuId: 2124,
-        name: 'Medium 11.5"',
-        price: 18.99,
-        calories: 1386,
-      },
-    ],
+    price: 18.99,
+    calories: 1386,
   },
   {
     id: 1709,
@@ -582,14 +301,8 @@ export const menu = [
     description:
       "Vegan soya & wheat pepperoni with a vegan cheese alternative. 158kcal, 662kJ / large slice / vegan Italian style crust.",
     ingredients: [266],
-    variants: [
-      {
-        skuId: 2125,
-        name: 'Large 13.5"',
-        price: 20.99,
-        calories: 1576,
-      },
-    ],
+    price: 20.99,
+    calories: 1576,
   },
   {
     id: 1656,
@@ -600,14 +313,8 @@ export const menu = [
     description:
       "Vegan soya strips, onions, green & red peppers and vegan cheese alternative. 195kcal, 820kJ / medium slice / vegan classic crust.",
     ingredients: [1, 2, 261],
-    variants: [
-      {
-        skuId: 2068,
-        name: 'Medium 11.5"',
-        price: 18.99,
-        calories: 1562,
-      },
-    ],
+    price: 18.99,
+    calories: 1562,
   },
   {
     id: 1657,
@@ -619,14 +326,8 @@ export const menu = [
     description:
       "Vegan soya strips, onions, green & red peppers and vegan cheese alternative. 209kcal, 876kJ / large slice / vegan Italian style crust.",
     ingredients: [1, 2, 261],
-    variants: [
-      {
-        skuId: 2069,
-        name: 'Large 13.5"',
-        price: 20.99,
-        calories: 2085,
-      },
-    ],
+    price: 20.99,
+    calories: 2085,
   },
   {
     id: 1646,
@@ -638,14 +339,8 @@ export const menu = [
     description:
       "Foodies tomato sauce, fresh tomatoes, vegan cheese alternative, sprinkled with Foodies herbs. 171kcal, 717kJ / medium slice / vegan classic crust.",
     ingredients: [15, 23],
-    variants: [
-      {
-        skuId: 1993,
-        name: 'Medium 11.5"',
-        price: 14.99,
-        calories: 1365,
-      },
-    ],
+    price: 14.99,
+    calories: 1365,
   },
   {
     id: 1650,
@@ -657,14 +352,8 @@ export const menu = [
     description:
       "Domino's Italian style crust topped with Foodies Tomato Sauce, fresh tomatoes, vegan cheese alternative, sprinkled with Foodies herbs  145kcal, 609kJ / large slice / vegan Italian style crust.",
     ingredients: [15, 23],
-    variants: [
-      {
-        skuId: 1996,
-        name: 'Large 13.5"',
-        price: 16.99,
-        calories: 1449,
-      },
-    ],
+    price: 16.99,
+    calories: 1449,
   },
   {
     id: 1647,
@@ -676,14 +365,8 @@ export const menu = [
     description:
       "Onions, green & red peppers, sweetcorn, mushrooms, tomatoes and a vegan cheese alternative. 172kcal, 721kJ / medium slice / vegan classic crust.",
     ingredients: [1, 2, 4, 7, 15],
-    variants: [
-      {
-        skuId: 1994,
-        name: 'Medium 11.5"',
-        price: 17.99,
-        calories: 1373,
-      },
-    ],
+    price: 17.99,
+    calories: 1373,
   },
   {
     id: 1652,
@@ -695,14 +378,8 @@ export const menu = [
     description:
       "Domino's Italian style crust topped with onions, green & red peppers, sweetcorn, mushrooms, tomatoes and a vegan cheese alternative. 149kcal, 624kJ / large slice / vegan Italian style crust.",
     ingredients: [1, 2, 4, 7, 15],
-    variants: [
-      {
-        skuId: 1997,
-        name: 'Large 13.5"',
-        price: 19.99,
-        calories: 1486,
-      },
-    ],
+    price: 19.99,
+    calories: 1486,
   },
   {
     id: 1604,
@@ -714,9 +391,8 @@ export const menu = [
     description:
       "Our Original Cheese & Tomato pizza with even more cheese on a Dr Schär Gluten Free Base. 708kcal, 2974kJ per small pizza.",
     ingredients: [],
-    variants: [
-      { skuId: 1939, name: 'Small 9.5"', price: 12.99, calories: 708 },
-    ],
+    price: 12.99,
+    calories: 708,
   },
   {
     id: 1605,
@@ -728,9 +404,8 @@ export const menu = [
     description:
       "Extra pepperoni and extra mozzarella cheese with Foodies tomato sauce on a Dr Schär Gluten Free Base. 818kcal, 3436kJ per small pizza.",
     ingredients: [3],
-    variants: [
-      { skuId: 1941, name: 'Small 9.5"', price: 15.99, calories: 818 },
-    ],
+    price: 15.99,
+    calories: 818,
   },
   {
     id: 1607,
@@ -742,9 +417,8 @@ export const menu = [
     description:
       "Onions, green and red peppers, sweetcorn, mushrooms, tomatoes on a Dr Schär Gluten Free Base. 509kcal, 2138kJ per small pizza.",
     ingredients: [1, 2, 4, 7, 15],
-    variants: [
-      { skuId: 1943, name: 'Small 9.5"', price: 15.99, calories: 509 },
-    ],
+    price: 15.99,
+    calories: 509,
   },
   {
     id: 1606,
@@ -756,9 +430,8 @@ export const menu = [
     description:
       "Tangy BBQ sauce topped with smoked bacon, chicken breast strips, onions, green & red peppers on a Dr Schär Gluten Free Base. 602kcal, 2528kJ per small pizza.",
     ingredients: [1, 2, 6, 20],
-    variants: [
-      { skuId: 1942, name: 'Small 9.5"', price: 15.99, calories: 602 },
-    ],
+    price: 15.99,
+    calories: 602,
   },
   {
     id: 1603,
@@ -770,9 +443,8 @@ export const menu = [
     description:
       "Pepperoni, ham, smoked bacon, mushrooms on a Dr Schär Gluten Free Base. 568kcal, 2386kJ per small pizza.",
     ingredients: [3, 6, 7, 18],
-    variants: [
-      { skuId: 1940, name: 'Small 9.5"', price: 17.99, calories: 568 },
-    ],
+    price: 17.99,
+    calories: 568,
   },
   {
     id: 1426,
@@ -784,14 +456,8 @@ export const menu = [
     description:
       "6 fresh dough pizza rolls brushed with garlic and filled with 100% mozzarella. Serves 2 - 339kcal, 1424kJ / serving.",
     ingredients: [],
-    variants: [
-      {
-        skuId: 1634,
-        name: "6 Twisted Dough Balls™",
-        price: 4.99,
-        calories: 678,
-      },
-    ],
+    price: 4.99,
+    calories: 678,
   },
   {
     id: 1424,
@@ -803,14 +469,8 @@ export const menu = [
     description:
       "6 fresh dough pizza rolls brushed with garlic and filled with 100% mozzarella and pepperoni. Serves 2 - 373kcal, 1567kJ / serving.",
     ingredients: [],
-    variants: [
-      {
-        skuId: 1632,
-        name: "6 Twisted Dough Balls™",
-        price: 4.99,
-        calories: 746,
-      },
-    ],
+    price: 4.99,
+    calories: 746,
   },
   {
     id: 1425,
@@ -822,14 +482,8 @@ export const menu = [
     description:
       "6 fresh dough pizza rolls brushed with garlic and filled with 100% mozzarella and ham. Serves 2 - 341kcal, 1432kJ / serving.",
     ingredients: [],
-    variants: [
-      {
-        skuId: 1633,
-        name: "6 Twisted Dough Balls™",
-        price: 4.99,
-        calories: 682,
-      },
-    ],
+    price: 4.99,
+    calories: 682,
   },
   {
     id: 1,
@@ -841,14 +495,8 @@ export const menu = [
     description:
       "Our fresh 6” dough base topped with garlic and parsley, Foodies own tomato sauce and 100% mozzarella cheese. Serves 2 - 307kcal, 1289kJ / serving.",
     ingredients: [],
-    variants: [
-      {
-        skuId: 225,
-        name: "Garlic Pizza Bread",
-        price: 4.99,
-        calories: 614,
-      },
-    ],
+    price: 4.99,
+    calories: 614,
   },
   {
     id: 147,
@@ -860,9 +508,8 @@ export const menu = [
     description:
       "Seasoned and baked to perfection. Served with dip. Serves 2 - 119kcal, 498kJ / serving (excluding dip).",
     ingredients: [],
-    variants: [
-      { skuId: 231, name: "Potato Wedges", price: 4.99, calories: 237 },
-    ],
+    price: 4.99,
+    calories: 237,
   },
   {
     id: 1659,
@@ -874,20 +521,8 @@ export const menu = [
     description:
       "7 Soya based Vegan Nuggets, coated in crispy southern-fried flavour breadcrumbs. Served with a Vegan Garlic & Herb dip. Serves 2 - 200kcal, 838kJ / serving (excluding dip).",
     ingredients: [],
-    variants: [
-      {
-        skuId: 2067,
-        name: "7 Vegan Nuggets",
-        price: 5.99,
-        calories: 399,
-      },
-      {
-        skuId: 2078,
-        name: "14 Vegan Nuggets",
-        price: 9.99,
-        calories: 797,
-      },
-    ],
+    price: 5.99,
+    calories: 797,
   },
   {
     id: 1679,
@@ -899,9 +534,8 @@ export const menu = [
     description:
       "A full portion of Vegan Nuggets and Potato Wedges, served with 1 Vegan Garlic & Herb dip and 1 BBQ dip. Serves 4 - 171kcal, 717kJ / serving (excluding dip).",
     ingredients: [],
-    variants: [
-      { skuId: 2079, name: "Vegan Combo", price: 9.49, calories: 683 },
-    ],
+    price: 9.49,
+    calories: 683,
   },
   {
     id: 1599,
@@ -913,14 +547,8 @@ export const menu = [
     description:
       "Freshly baked dough sticks, brushed with garlic and served with a garlic and herb dip. Serves 2 - 243kcal, 1021kJ / serving (excluding dip).",
     ingredients: [],
-    variants: [
-      {
-        skuId: 1931,
-        name: "Garlic Dippers",
-        price: 4.99,
-        calories: 243,
-      },
-    ],
+    price: 4.99,
+    calories: 243,
   },
   {
     id: 1488,
@@ -932,7 +560,8 @@ export const menu = [
     description:
       "With our secret recipe tomato sauce, topped with mozzarella cheese, served with a tangy salsa dip. Serves 2 - 255kcal,1069kJ / serving (excluding dip).",
     ingredients: [],
-    variants: [{ skuId: 1742, name: "Nachos", price: 4.99, calories: 509 }],
+    price: 4.99,
+    calories: 509,
   },
   {
     id: 1489,
@@ -944,14 +573,8 @@ export const menu = [
     description:
       "With our secret recipe tomato sauce, topped with mozzarella cheese, with jalapeños, served with a tangy salsa dip. Serves 2 - 256kcal, 1073kJ / serving (excluding dip).",
     ingredients: [],
-    variants: [
-      {
-        skuId: 1743,
-        name: "Nachos with Jalapeños",
-        price: 4.99,
-        calories: 511,
-      },
-    ],
+    price: 4.99,
+    calories: 511,
   },
   {
     id: 2,
@@ -961,7 +584,8 @@ export const menu = [
     image: "/images/1907-SID-Coleslaw.jpg?v=165eaea752743180a01d2f7b952efee6",
     description: "200g tub. Serves 2 - 145kcal, 609kJ / serving.",
     ingredients: [],
-    variants: [{ skuId: 226, name: "Coleslaw", price: 2.99, calories: 290 }],
+    price: 2.99,
+    calories: 290,
   },
   {
     id: 1506,
@@ -973,14 +597,8 @@ export const menu = [
     description:
       "A mix of all your chicken favourites, 4 Chicken Strippers, 4 Chicken Kickers and 4 Chicken Wings served with a Garlic & Herb and BBQ dip. Serves 4 - 185kcal, 775kJ / serving (excluding dips).",
     ingredients: [],
-    variants: [
-      {
-        skuId: 1781,
-        name: "Chick 'n' Mix Box",
-        price: 9.99,
-        calories: 738,
-      },
-    ],
+    price: 9.99,
+    calories: 738,
   },
   {
     id: 46,
@@ -992,20 +610,8 @@ export const menu = [
     description:
       "7 Chicken breast goujons, coated in crispy breadcrumbs, served with dip. Serves 2 - 218kcal, 916kJ / serving (excluding dip).",
     ingredients: [],
-    variants: [
-      {
-        skuId: 230,
-        name: "7 Chicken Strippers®",
-        price: 5.99,
-        calories: 436,
-      },
-      {
-        skuId: 1654,
-        name: "14 Chicken Strippers®",
-        price: 9.99,
-        calories: 871,
-      },
-    ],
+    price: 5.99,
+    calories: 871,
   },
   {
     id: 150,
@@ -1017,9 +623,8 @@ export const menu = [
     description:
       "A full portion of chicken strippers® and potato wedges. Served with dips. Serves 4 - 180kcal, 755kJ / serving (excluding dips).",
     ingredients: [],
-    variants: [
-      { skuId: 232, name: "Stripper Combo", price: 9.49, calories: 719 },
-    ],
+    price: 9.49,
+    calories: 719,
   },
   {
     id: 1131,
@@ -1031,20 +636,8 @@ export const menu = [
     description:
       "7 Pieces of white chicken breast in a mildly spicy, crispy coating, served with a garlic & herb dip. Serves 2 - 203kcal, 853kJ / serving (excluding dip).",
     ingredients: [],
-    variants: [
-      {
-        skuId: 616,
-        name: "7 Chicken Kickers™",
-        price: 5.99,
-        calories: 406,
-      },
-      {
-        skuId: 1655,
-        name: "14 Chicken Kickers™",
-        price: 9.99,
-        calories: 812,
-      },
-    ],
+    price: 5.99,
+    calories: 812,
   },
   {
     id: 1145,
@@ -1056,9 +649,8 @@ export const menu = [
     description:
       "A full portion of chicken kickers™ and potato wedges. Served with dips. Serves 4 - 173kcal, 727kJ / serving (excluding dip).",
     ingredients: [],
-    variants: [
-      { skuId: 648, name: "Kickers Combo", price: 9.49, calories: 692 },
-    ],
+    price: 9.49,
+    calories: 692,
   },
   {
     id: 1248,
@@ -1070,9 +662,8 @@ export const menu = [
     description:
       "A full portion of Chicken Wings and Potato Wedges, served with Garlic & Herb dip and FRANK'S® RedHot® dip. Serves 4 - 183kcal, 770kJ / serving (excluding dips).",
     ingredients: [],
-    variants: [
-      { skuId: 1365, name: "Wings Combo", price: 9.49, calories: 733 },
-    ],
+    price: 9.49,
+    calories: 733,
   },
   {
     id: 1458,
@@ -1084,20 +675,8 @@ export const menu = [
     description:
       "7 Chicken wings coated in a medium spicy BBQ sauce. Serves 2 - 252kcal, 1058kJ / serving.",
     ingredients: [],
-    variants: [
-      {
-        skuId: 1683,
-        name: "7 Spicy BBQ Wings",
-        price: 5.99,
-        calories: 504,
-      },
-      {
-        skuId: 1684,
-        name: "14 Spicy BBQ Wings",
-        price: 9.99,
-        calories: 981,
-      },
-    ],
+    price: 5.99,
+    calories: 981,
   },
   {
     id: 1198,
@@ -1109,20 +688,8 @@ export const menu = [
     description:
       "7 Lightly spiced chicken wings. Serves 2 - 226kcal, 947kJ / serving.",
     ingredients: [],
-    variants: [
-      {
-        skuId: 1293,
-        name: "7 Chicken Wings",
-        price: 5.99,
-        calories: 451,
-      },
-      {
-        skuId: 1653,
-        name: "14 Chicken Wings",
-        price: 9.99,
-        calories: 902,
-      },
-    ],
+    price: 5.99,
+    calories: 902,
   },
   {
     id: 1432,
@@ -1134,20 +701,8 @@ export const menu = [
     description:
       "7 Chicken wings coated in FRANK'S® RedHot®. Serves 2 - 228kcal, 956kJ / serving.",
     ingredients: [],
-    variants: [
-      {
-        skuId: 1643,
-        name: "7 FRANK'S® RedHot® Wings",
-        price: 5.99,
-        calories: 455,
-      },
-      {
-        skuId: 1644,
-        name: "14 FRANK'S® RedHot® Wings",
-        price: 9.99,
-        calories: 909,
-      },
-    ],
+    price: 5.99,
+    calories: 909,
   },
   {
     id: 19,
@@ -1157,23 +712,8 @@ export const menu = [
     image: "/images/1907-SID-Dip-x4.jpg?v=403482d77cdae31d727fde00b578643d",
     description: "A range of delicious 25g dips for dunkin' those crusts.",
     ingredients: [],
-    variants: [
-      {
-        skuId: 233,
-        name: "Honey & Mustard",
-        price: 0.49,
-        calories: 109,
-      },
-      { skuId: 234, name: "Garlic & Herb", price: 0.49, calories: 169 },
-      { skuId: 236, name: "Barbecue", price: 0.49, calories: 47 },
-      {
-        skuId: 1237,
-        name: "FRANK'S® RedHot® dip",
-        price: 0.49,
-        calories: 5,
-      },
-      { skuId: 1750, name: "Tangy salsa", price: 0.49, calories: 42 },
-    ],
+    price: 0.49,
+    calories: 42,
   },
   {
     id: 1649,
@@ -1185,14 +725,8 @@ export const menu = [
     description:
       "Our delicious Vegan Garlic & Herb dip, perfect for dunkin' those crusts (25g). Serves 1 - 116kcal, 487kJ / serving.",
     ingredients: [],
-    variants: [
-      {
-        skuId: 1995,
-        name: "Vegan Garlic & Herb Dip",
-        price: 0.49,
-        calories: 116,
-      },
-    ],
+    price: 0.49,
+    calories: 116,
   },
   {
     id: 1502,
@@ -1204,14 +738,8 @@ export const menu = [
     description:
       "Our 4X bigger Garlic & Herb Dip (100g). Serves 4 - 169kcal, 709kJ / serving.",
     ingredients: [],
-    variants: [
-      {
-        skuId: 1770,
-        name: "Our 4X bigger Garlic & Herb Dip (100g)",
-        price: 1.59,
-        calories: 675,
-      },
-    ],
+    price: 1.59,
+    calories: 675,
   },
   {
     id: 1533,
@@ -1223,14 +751,8 @@ export const menu = [
     description:
       "Our 4X bigger BBQ Dip (100g). Serves 4 - 47kcal, 197kJ / serving.",
     ingredients: [],
-    variants: [
-      {
-        skuId: 1820,
-        name: "Our 4X bigger BBQ Dip (100g)",
-        price: 1.59,
-        calories: 188,
-      },
-    ],
+    price: 1.59,
+    calories: 188,
   },
   {
     id: 1182,
@@ -1241,14 +763,8 @@ export const menu = [
     description:
       "4 crunchy chewy warm & gooey cookies loaded with choc chips. Serves 4 - 174kcal, 729kJ / serving.",
     ingredients: [],
-    variants: [
-      {
-        skuId: 1259,
-        name: "Foodies Cookies",
-        price: 4.99,
-        calories: 694,
-      },
-    ],
+    price: 4.99,
+    calories: 694,
   },
   {
     id: 1564,
@@ -1260,14 +776,8 @@ export const menu = [
     description:
       'Our fresh 6" dough base topped with melted milk chocolate, to give you the perfect chocolate dessert pizza. Serves 4 - 207kcal, 869kJ / serving.',
     ingredients: [],
-    variants: [
-      {
-        skuId: 1865,
-        name: "Lotta-Chocca Pizza",
-        price: 5.49,
-        calories: 828,
-      },
-    ],
+    price: 5.49,
+    calories: 828,
   },
   {
     id: 1569,
@@ -1279,7 +789,8 @@ export const menu = [
     description:
       "Vanilla cake batter ice cream with pink frosting, strawberry swirls and cake pieces. Delivered frozen.",
     ingredients: [],
-    variants: [{ skuId: 1985, name: "465ml", price: 5.99, calories: 0 }],
+    price: 5.99,
+    calories: 0,
   },
   {
     id: 1568,
@@ -1291,7 +802,8 @@ export const menu = [
     description:
       "Vanilla ice cream with white chocolate. All wrapped in a cracking chocolate shell that was made to be broken. Delivered frozen.",
     ingredients: [],
-    variants: [{ skuId: 1875, name: "440ml", price: 5.99, calories: 0 }],
+    price: 5.99,
+    calories: 0,
   },
   {
     id: 1109,
@@ -1303,10 +815,8 @@ export const menu = [
     description:
       "Caramel ice cream with a caramel swirl and chocolatey covered caramel chunks. Delivered frozen.",
     ingredients: [],
-    variants: [
-      { skuId: 1775, name: "100ml", price: 2.99, calories: 0 },
-      { skuId: 1987, name: "465ml", price: 5.99, calories: 0 },
-    ],
+    price: 2.99,
+    calories: 0,
   },
   {
     id: 1101,
@@ -1318,10 +828,8 @@ export const menu = [
     description:
       "Chocolate ice cream with chocolate brownie pieces. Delivered frozen.",
     ingredients: [],
-    variants: [
-      { skuId: 1776, name: "100ml", price: 2.99, calories: 0 },
-      { skuId: 1989, name: "465ml", price: 5.99, calories: 0 },
-    ],
+    price: 2.99,
+    calories: 0,
   },
   {
     id: 1102,
@@ -1333,10 +841,8 @@ export const menu = [
     description:
       "Vanilla ice cream with chunks of chocolate chip cookie dough and chocolatey chunks. Delivered frozen.",
     ingredients: [],
-    variants: [
-      { skuId: 1777, name: "100ml", price: 2.99, calories: 0 },
-      { skuId: 1986, name: "465ml", price: 5.99, calories: 0 },
-    ],
+    price: 2.99,
+    calories: 0,
   },
   {
     id: 1110,
@@ -1348,7 +854,8 @@ export const menu = [
     description:
       "Chocolate ice cream with marshmallow, caramel and chocolatey shaped fish. Delivered frozen.",
     ingredients: [],
-    variants: [{ skuId: 1991, name: "465ml", price: 5.99, calories: 0 }],
+    price: 5.99,
+    calories: 0,
   },
   {
     id: 1106,
@@ -1360,7 +867,8 @@ export const menu = [
     description:
       "Strawberry Cheesecake Ice Cream with Strawberries & Cookie Swirls. Delivered frozen.",
     ingredients: [],
-    variants: [{ skuId: 1780, name: "100ml", price: 2.99, calories: 0 }],
+    price: 2.99,
+    calories: 0,
   },
   {
     id: 1108,
@@ -1371,7 +879,8 @@ export const menu = [
       "/images/2106-DES-BJ-Fair-Trade-Vanilla-100ml.jpg?v=6ec847ff2d4e09a0a9462814697c9395",
     description: "Vanilla ice cream. Delivered frozen.",
     ingredients: [],
-    variants: [{ skuId: 1778, name: "100ml", price: 2.99, calories: 0 }],
+    price: 2.99,
+    calories: 0,
   },
   {
     id: 11,
@@ -1381,10 +890,8 @@ export const menu = [
     image: "/images/1907-DRI-Coca-Cola.jpg?v=a9e504fd285586b57497e49a1eb90775",
     description: "",
     ingredients: [],
-    variants: [
-      { skuId: 320, name: "1.25l", price: 2.5, calories: 0 },
-      { skuId: 324, name: "500ml", price: 1.59, calories: 0 },
-    ],
+    price: 2.5,
+    calories: 0,
   },
   {
     id: 31,
@@ -1394,10 +901,8 @@ export const menu = [
     image: "/images/1907-DRI-Diet-Coke.jpg?v=fce7fa38e90d557fbbfb3eec2d673c94",
     description: "",
     ingredients: [],
-    variants: [
-      { skuId: 321, name: "1.25l", price: 2.15, calories: 0 },
-      { skuId: 325, name: "500ml", price: 1.49, calories: 0 },
-    ],
+    price: 2.15,
+    calories: 0,
   },
   {
     id: 1133,
@@ -1408,10 +913,8 @@ export const menu = [
       "/images/2105-DRI-Coke-Zero-Sugar.jpg?v=798e890e16f50bf0720af00a73346a49",
     description: "",
     ingredients: [],
-    variants: [
-      { skuId: 623, name: "1.25l", price: 2.15, calories: 0 },
-      { skuId: 622, name: "500ml", price: 1.49, calories: 0 },
-    ],
+    price: 2.15,
+    calories: 0,
   },
   {
     id: 1521,
@@ -1422,7 +925,8 @@ export const menu = [
       "/images/1907-DRI-Smartwater-600ml.jpg?v=848559acf4043eac890c55f6ac133185",
     description: "Vapour distilled spring water with added electrolytes.",
     ingredients: [],
-    variants: [{ skuId: 1804, name: "600ml", price: 1.49, calories: 0 }],
+    price: 1.49,
+    calories: 0,
   },
   {
     id: 32,
@@ -1433,10 +937,8 @@ export const menu = [
       "/images/1907-DRI-Fanta-Orange.jpg?v=c7cdeca16d5eb8312d4219a516c285f8",
     description: "",
     ingredients: [],
-    variants: [
-      { skuId: 322, name: "1.25l", price: 2.15, calories: 0 },
-      { skuId: 326, name: "500ml", price: 1.49, calories: 0 },
-    ],
+    price: 2.15,
+    calories: 0,
   },
   {
     id: 1257,
@@ -1446,7 +948,8 @@ export const menu = [
     image: "/images/1907-DRI-Dr-Pepper.jpg?v=56fa0a79b585438ec1145411b334c8c8",
     description: "",
     ingredients: [],
-    variants: [{ skuId: 1598, name: "500ml", price: 1.49, calories: 0 }],
+    price: 1.49,
+    calories: 0,
   },
   {
     id: 37,
@@ -1456,7 +959,8 @@ export const menu = [
     image: "/images/1907-DRI-Sprite.jpg?v=a7c52df5d6c2100abd577e8900d7f977",
     description: "",
     ingredients: [],
-    variants: [{ skuId: 327, name: "500ml", price: 1.49, calories: 0 }],
+    price: 1.49,
+    calories: 0,
   },
   {
     id: 1386,
@@ -1467,7 +971,8 @@ export const menu = [
       "/images/1907-DRI-Oasis-Citrus.jpg?v=2fbeed721f38f410bf7b67ad105832d6",
     description: "Still mixed citrus fruit juice drink.",
     ingredients: [],
-    variants: [{ skuId: 1560, name: "500ml", price: 1.49, calories: 0 }],
+    price: 1.49,
+    calories: 0,
   },
   {
     id: 1364,
@@ -1478,6 +983,7 @@ export const menu = [
       "/images/1907-DRI-Oasis-Summer-Fruit.jpg?v=891a2c7091ac2cddd3fc692c00fbf23f",
     description: "Still summer fruit juice drink.",
     ingredients: [],
-    variants: [{ skuId: 1529, name: "500ml", price: 1.49, calories: 0 }],
+    price: 1.49,
+    calories: 0,
   },
 ];

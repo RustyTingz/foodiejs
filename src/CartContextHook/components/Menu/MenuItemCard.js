@@ -2,17 +2,7 @@ import CartAddButton from '../Cart/CartAddButton';
 import classes from "./MenuItemCard.module.css";
 
 const MenuItemCard = ({ menuItem }) => {
-  const Price = () => {
-    const price = menuItem.variants
-      && menuItem.variants.length > 0
-      ? menuItem.variants[0].price.toFixed(2)
-      : 0.00
-    return (
-      <span>
-        from {`£${price}`}
-      </span>
-    );
-  }
+  //  const price = `£${meal.price.toFixed(2)}`;
 
   return (
     <div className={classes["menu-item"]}>
@@ -29,7 +19,7 @@ const MenuItemCard = ({ menuItem }) => {
         <p className={classes["menu-item__description"]}>
           {menuItem.description}
         </p>
-        <Price />
+        <span>{menuItem.price}</span>
       </div>
       <div className={classes["menu-item__actions"]}>
         <CartAddButton
