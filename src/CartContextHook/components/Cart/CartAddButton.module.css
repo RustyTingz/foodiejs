@@ -1,0 +1,23 @@
+.cart__add {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  align-self: flex-end;
+}
+
+.cart__add button {
+  font: inherit;
+  cursor: pointer;
+  background-color: #90b918;
+  border: 1px solid #5eaa17;
+  color: white;
+  padding: 0.25rem 2rem;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.cart__add button:hover,
+.cart__add button:active {
+  background-color: #37650d;
+  border-color: #5eaa17;
+}
