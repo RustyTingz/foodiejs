@@ -1,4 +1,4 @@
-import cartReducer, { defaultCartState, cartActionFactory } from "../../store/cartReducer";
+import cartReducer, { defaultCartState, cartActionFactory } from "../../CartContextReducer/store/cartReducer";
 
 const initialState = defaultCartState;
 

@@ -1,4 +1,4 @@
-import { menuApi } from "../../api/menuApi";
+import { menuApi } from "../../../api/menuApi";
 import menuReducer, {
   menuActionFactory,
   menuInitialState,
