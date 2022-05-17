@@ -1,4 +1,4 @@
-export const sizes = [
+export const mockSizes = [
   {
     name: 'Personal 7"',
     maxToppings: 5,
