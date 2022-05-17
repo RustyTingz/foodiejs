@@ -1,4 +1,4 @@
-export const ingredients = [
+export const mockIngredients = [
   {
     id: 0,
     name: "Classic Crust",

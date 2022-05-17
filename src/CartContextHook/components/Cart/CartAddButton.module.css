@@ -1,13 +1,11 @@
-.menu {
+.cart__add {
   display: flex;
-  flex-wrap: wrap;
-  margin: 0.5rem
+  flex-direction: column;
+  align-items: flex-end;
+  align-self: flex-end;
 }
 
-.menu__action {
-  margin: 0.5rem;
-}
-.menu__action button {
+.cart__add button {
   font: inherit;
   cursor: pointer;
   background-color: #90b918;
@@ -18,8 +16,8 @@
   font-weight: bold;
 }
 
-.menu__action button:hover,
-.menu__action button:active {
+.cart__add button:hover,
+.cart__add button:active {
   background-color: #37650d;
   border-color: #5eaa17;
 }
