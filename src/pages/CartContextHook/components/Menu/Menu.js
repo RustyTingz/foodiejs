@@ -14,7 +14,7 @@ const Menu = () => {
     <section className={classes.menu}>
       {menu &&
         menu.map((menuItem) => (
-          <MenuItemCard key={menuItem.sku} menuItem={menuItem} />
+          <MenuItemCard key={menuItem.id} menuItem={menuItem} />
         ))}
     </section>
   );

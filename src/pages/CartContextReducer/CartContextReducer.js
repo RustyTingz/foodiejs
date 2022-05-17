@@ -1,5 +1,5 @@
-import React, { useState } from "react"
-import Header from "./components/Layout/Header"
+import React, { useState } from "react";
+import Header from "./components/Layout/Header";
 import Cart from "./components/Cart/Cart";
 import { CartProvider } from "./store/CartProvider";
 import MenuContainer from "./components/Menu/MenuContainer";
@@ -16,15 +16,13 @@ const CartContextReducer = () => {
   };
 
   return (
-    <div className="App">
-      <CartProvider>
-        <Header onCartShow={onCartShowHandler} />
-        {showCart && <Cart onClose={onCartCloseHandler} />}
-        <main className="app-content">
-          <MenuContainer />
-        </main>
-      </CartProvider>
-    </div>
+    <CartProvider>
+      <Header onCartShow={onCartShowHandler} />
+      {showCart && <Cart onClose={onCartCloseHandler} />}
+      <main className="app-content">
+        <MenuContainer />
+      </main>
+    </CartProvider>
   );
 };
 

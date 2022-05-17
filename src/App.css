@@ -12,6 +12,12 @@ code {
         monospace;
 }
 
+.router-container {
+    height: 100vh;
+    position:relative;
+    overflow: scroll;
+}
+
 .app-content {
     margin: 0 auto;
     max-width: 900px;

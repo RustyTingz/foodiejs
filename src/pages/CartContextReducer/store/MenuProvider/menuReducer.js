@@ -1,3 +1,5 @@
+import { filterAndSort } from "../../../../utils/listFiltering";
+
 const ACTION_TYPE = {
   INITIALISE_MENU: "INITIALISE_MENU",
   FILTER_MENU: "FILTER_MENU",
@@ -18,67 +20,36 @@ export const menuActionFactory = {
 
 export const menuInitialState = {
   menu: [],
-  menuItems: [],
-  filter: undefined,
+  menuCache: [],
+  filters: [],
   sortBy: undefined,
-};
-
-const filterMenuItem = (menuItem, filter = undefined) => {
-  return filter === undefined ||
-    (filter &&
-      menuItem[filter.field] &&
-      menuItem[filter.field] === filter.value);
-};
-
-const sortComparer = (itemA, itemB) => {
-  if (itemA > itemB) {
-    return 1;
-  }
-  if (itemA < itemB) {
-    return -1;
-  }
-
-  return 0;
-};
-
-const sortByField = (itemA, itemB, sortBy = undefined) => {
-  if (!sortBy) {
-    return 0;
-  }
-
-  return sortComparer(itemA[sortBy], itemB[sortBy]);
 };
 
 const menuReducer = (state, action) => {
   switch (action.type) {
     case ACTION_TYPE.INITIALISE_MENU: {
-      let menuItems = [...action.payload];
-      let filteredMenu = [...menuItems]
-        .filter((item) => filterMenuItem(item, state.filter))
-        .sort((a, b) => sortByField(a, b, state.sortBy));
+      let menuCache = [...action.payload];
+      let filteredMenu = filterAndSort([...menuCache], state.filters, state.sortBy);
 
       return {
         ...state,
-        menuItems: menuItems,
+        menuCache,
         menu: filteredMenu,
       };
     }
     case ACTION_TYPE.FILTER_MENU: {
-      let filter = action.payload;
-      let filteredMenu = [...state.menuItems]
-        .filter((item) => filterMenuItem(item, filter))
-        .sort((a, b) => sortByField(a, b, state.sortBy));
+      let filters = action.payload;
+      let filteredMenu = filterAndSort([...state.menuCache], filters, state.sortBy);
       return {
         ...state,
         menu: filteredMenu,
-        filter: filter,
+        filters: filters,
       };
     }
     case ACTION_TYPE.SORT_MENU: {
       let sortBy = action.payload;
-      let filteredMenu = [...state.menuItems]
-        .filter((item) => filterMenuItem(item, state.filter))
-        .sort((a, b) => sortByField(a, b, sortBy));
+      let filteredMenu = filterAndSort([...state.menuCache], state.filters, sortBy)
+      
       return {
         ...state,
         menu: filteredMenu,
