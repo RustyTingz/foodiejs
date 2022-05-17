@@ -4,6 +4,7 @@ import Header from "./components/Layout/Header"
 import MenuContainer from "./components/Menu/MenuContainer";
 import "./App.css"
 import Cart from "./components/Cart/Cart";
+import { CartProvider } from "./contexts/cart-context";
 
 const App = () => {
   const [showCart, setShowCart] = useState(false);
@@ -18,11 +19,13 @@ const App = () => {
 
   return (
     <div className="App">
-      <Header onCartShow={onCartShowHandler} />
-      {showCart && <Cart onClose={onCartCloseHandler} />}
-      <main className="app-content">
-        <MenuContainer />
-      </main>
+      <CartProvider>
+        <Header onCartShow={onCartShowHandler} />
+        { showCart && <Cart onClose={onCartCloseHandler} />}
+        <main className="app-content">
+          <MenuContainer />
+        </main>
+      </CartProvider>
     </div>
   );
 };

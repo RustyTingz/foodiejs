@@ -1,14 +1,17 @@
 import { useState } from 'react';
+import { useCart } from '../../contexts/cart-context';
 import Input from '../Core/Input';
 import classes from './CartAddButton.module.css';
 
 const CartAddButton = (props) => {
   const [quantity, setQuantity] = useState(1);
 
+  const { cartAddItem } = useCart();
+
 
   const onCartAddHandler = (e) => {
     e.preventDefault();
-    console.log("Add Item", props)
+    cartAddItem(props.item);
   } 
 
   return (

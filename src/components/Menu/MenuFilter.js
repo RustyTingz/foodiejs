@@ -4,7 +4,7 @@ import classes from "./Menu.module.css";
 
 
 const MenuFilters = () => {
-  const { filters, filterMenu } = useMenu();
+  const { filterMenu } = useMenu();
   const onFilterMenu = (key, value) => {
     if (key) {
       let filter = menuFilterFactory(key, value);
@@ -16,11 +16,6 @@ const MenuFilters = () => {
 
   return (
     <div>
-      {filters && (
-        <div>
-          Filtered by: {filters.map((filter) => filter.value).join(", ")}
-        </div>
-      )}
       <div className={classes["menu__action"]}>
         <button onClick={() => onFilterMenu("category", "Pizza")}>Pizza</button>
         <button onClick={() => onFilterMenu("category", "Sides")}>Sides</button>

@@ -4,6 +4,9 @@
   margin: 0.5rem
 }
 
+.menu__action {
+  margin: 0.5rem;
+}
 .menu__action button {
   font: inherit;
   cursor: pointer;

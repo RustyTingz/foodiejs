@@ -14,7 +14,7 @@ const MenuContext = React.createContext({
 const useMenuContext = () => {
   const context = useContext(MenuContext);
 
-  if (context === undefined) {
+  if (!context) {
     throw new Error("useMenuContext must be used within a MenuProvider");
   }
   

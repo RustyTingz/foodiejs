@@ -2,11 +2,10 @@ import { useMenu } from "../../contexts/menu-context";
 import classes from "./Menu.module.css";
 
 const MenuSort = () => {
-  const { sortBy, sortMenu } = useMenu();
+  const { sortMenu } = useMenu();
 
   return (
     <div>
-      <div>Sort By: {sortBy}</div>
       <div className={classes["menu__action"]}>
         <button onClick={() => sortMenu("name")}>Name</button>
         <button onClick={() => sortMenu("category")}>Category</button>

@@ -25,7 +25,7 @@ const MenuItemCard = ({ menuItem }) => {
         <CartAddButton
           id={menuItem.id}
           sku={menuItem.sku}
-          menuItem={menuItem}
+          item={menuItem}
         />
       </div>
     </div>

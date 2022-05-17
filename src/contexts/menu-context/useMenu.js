@@ -59,7 +59,6 @@ const useMenu = () => {
       .getMenu()
       .then((menu) => filterAndSort(menu, filters, sortBy))
       .then((menu) => {
-        console.log("Sorted menu", menu);
         setSortBy(sortBy);
         setMenu(menu);
         setIsFetching(false);
