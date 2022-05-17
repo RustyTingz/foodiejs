@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './Header.module.css';
-import headerImage from './../../assets/meals.jpeg';
+import headerImage from '../../../../assets/meals.jpeg';
 import HeaderCartButton from './HeaderCartButton';
 
 const Header = (props) => {

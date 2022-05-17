@@ -1,16 +1,20 @@
-import { useMenu } from "../../contexts/menu-context";
-import { menuFilterFactory } from "../../contexts/menu-context/useMenu";
+
+import { useContext } from "react";
+import MenuContext from "../../store/MenuProvider/menu-context";
+import { menuFilterFactory } from "../../store/MenuProvider/menuFiltering";
+
 import classes from "./Menu.module.css";
 
 
 const MenuFilters = () => {
-  const { filterMenu } = useMenu();
+  const ctxMenu = useContext(MenuContext);
+
   const onFilterMenu = (key, value) => {
     if (key) {
       let filter = menuFilterFactory(key, value);
-      filterMenu([filter]);
+      ctxMenu.filterMenu([filter]);
     } else {
-      filterMenu([]);
+      ctxMenu.filterMenu([]);
     }
   };
 

@@ -1,5 +1,5 @@
-import { mockMenu } from "../../../../api/__mocks__/menu";
-import { filterAndSort, FILTER_PREDICATE } from "../menuFiltering";
+import { mockMenu } from "../../../../../api/__mocks__/menu";
+import { filterAndSort, FILTER_PREDICATE } from "../../../../../utils/listFiltering";
 
 describe("CONTEXTS - Filtering", () => {
   describe("menuFiltering", () => {
