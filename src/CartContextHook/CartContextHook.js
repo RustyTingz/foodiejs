@@ -1,12 +1,11 @@
 import React, { useState } from "react"
-import ReactDOM from "react-dom"
 import Header from "./components/Layout/Header"
 import MenuContainer from "./components/Menu/MenuContainer";
 import "./App.css"
 import Cart from "./components/Cart/Cart";
 import { CartProvider } from "./contexts/cart-context";
 
-const App = () => {
+const CartContextHook = () => {
   const [showCart, setShowCart] = useState(false);
 
   const onCartShowHandler = () => {
@@ -30,4 +29,4 @@ const App = () => {
   );
 };
 
-ReactDOM.render(React.createElement(App), document.getElementById("root"));
+export default CartContextHook;
