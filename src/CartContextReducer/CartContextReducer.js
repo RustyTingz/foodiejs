@@ -1,10 +1,8 @@
 import React, { useState } from "react"
-import ReactDOM from "react-dom"
 import Header from "./components/Layout/Header"
-import MenuContainer from "./components/Menu/MenuContainer";
-import "./App.css"
 import Cart from "./components/Cart/Cart";
-import CartProvider from "./CartContextReducer/store/CartProvider";
+import { CartProvider } from "./store/CartProvider";
+import MenuContainer from "./components/Menu/MenuContainer";
 
 const CartContextReducer = () => {
   const [showCart, setShowCart] = useState(false);
