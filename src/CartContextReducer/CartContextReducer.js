@@ -1,27 +1,25 @@
 import React, { useState } from "react"
-import ReactDOM from "react-dom"
 import Header from "./components/Layout/Header"
-import MenuContainer from "./components/Menu/MenuContainer";
-import "./App.css"
 import Cart from "./components/Cart/Cart";
-import { CartProvider } from "./contexts/cart-context";
+import { CartProvider } from "./store/CartProvider";
+import MenuContainer from "./components/Menu/MenuContainer";
 
-const App = () => {
+const CartContextReducer = () => {
   const [showCart, setShowCart] = useState(false);
 
   const onCartShowHandler = () => {
     setShowCart(true);
   };
-  
+
   const onCartCloseHandler = () => {
     setShowCart(false);
-  } 
+  };
 
   return (
     <div className="App">
       <CartProvider>
         <Header onCartShow={onCartShowHandler} />
-        { showCart && <Cart onClose={onCartCloseHandler} />}
+        {showCart && <Cart onClose={onCartCloseHandler} />}
         <main className="app-content">
           <MenuContainer />
         </main>
@@ -30,4 +28,4 @@ const App = () => {
   );
 };
 
-ReactDOM.render(React.createElement(App), document.getElementById("root"));
+export default CartContextReducer;
