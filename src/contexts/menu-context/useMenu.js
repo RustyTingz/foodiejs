@@ -1,7 +1,22 @@
 import { useCallback } from "react";
 import { menuApi } from "../../api/menuApi";
 import { useMenuContext } from "./MenuContextsProvider";
-import { filterAndSort } from "./menuFiltering";
+import { filterAndSort, FILTER_PREDICATE } from "./menuFiltering";
+
+export const MENU_FILTER = {
+  CATEGORY: "category"
+}
+
+export const menuFilterFactory = (key, value) => {
+  switch (key) {
+    case MENU_FILTER.CATEGORY:
+      return {
+        key,
+        value,
+        predicate: FILTER_PREDICATE.equalTo
+      }
+  }
+}
 
 const useMenu = () => {
   const {
@@ -25,24 +40,30 @@ const useMenu = () => {
 
   const filterMenu = (filters) => {
     setIsFetching(true);
-    setFilters(filters);
 
     menuApi
       .getMenu()
       .then((menu) => filterAndSort(menu, filters, sortBy))
-      .then((menu) => setMenu(menu))
-      .then(() => setIsFetching(false));
+      .then((menu) => {
+        setFilters(filters);
+        console.log("Filtered menu", menu);
+        setMenu(menu);
+        setIsFetching(false);
+      })
   };
 
   const sortMenu = (sortBy) => {
     setIsFetching(true);
-    setSortBy(sortBy);
 
     menuApi
       .getMenu()
       .then((menu) => filterAndSort(menu, filters, sortBy))
-      .then((menu) => setMenu(menu))
-      .then(() => setIsFetching(false));
+      .then((menu) => {
+        console.log("Sorted menu", menu);
+        setSortBy(sortBy);
+        setMenu(menu);
+        setIsFetching(false);
+      });
   };
 
   return {

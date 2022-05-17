@@ -18,11 +18,11 @@ const App = () => {
 
   return (
     <div className="App">
-        <Header onCartShow={onCartShowHandler} />
-        {showCart && <Cart onClose={onCartCloseHandler} />}
-        <main className="app-content">
-          <MenuContainer />
-        </main>
+      <Header onCartShow={onCartShowHandler} />
+      {showCart && <Cart onClose={onCartCloseHandler} />}
+      <main className="app-content">
+        <MenuContainer />
+      </main>
     </div>
   );
 };

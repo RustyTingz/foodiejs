@@ -1,16 +1,38 @@
+import { useMenu } from "../../contexts/menu-context";
+import { menuFilterFactory } from "../../contexts/menu-context/useMenu";
+import classes from "./Menu.module.css";
+
+
 const MenuFilters = () => {
-  const onFilterMenu = (filter) => {
-    console.log(filter);
+  const { filters, filterMenu } = useMenu();
+  const onFilterMenu = (key, value) => {
+    if (key) {
+      let filter = menuFilterFactory(key, value);
+      filterMenu([filter]);
+    } else {
+      filterMenu([]);
+    }
   };
 
   return (
-    <>
-      <button onClick={() => onFilterMenu("Pizza")}>Pizza</button>
-      <button onClick={() => onFilterMenu("Sides")}>Side</button>
-      <button onClick={() => onFilterMenu("Desserts")}>Desert</button>
-      <button onClick={() => onFilterMenu("Drinks")}>Drinks</button>
-      <button onClick={() => onFilterMenu(undefined)}>CLEAR</button>
-    </>
+    <div>
+      {filters && (
+        <div>
+          Filtered by: {filters.map((filter) => filter.value).join(", ")}
+        </div>
+      )}
+      <div className={classes["menu__action"]}>
+        <button onClick={() => onFilterMenu("category", "Pizza")}>Pizza</button>
+        <button onClick={() => onFilterMenu("category", "Sides")}>Sides</button>
+        <button onClick={() => onFilterMenu("category", "Desserts")}>
+          Desserts
+        </button>
+        <button onClick={() => onFilterMenu("category", "Drinks")}>
+          Drinks
+        </button>
+        <button onClick={() => onFilterMenu(undefined)}>CLEAR</button>
+      </div>
+    </div>
   );
 };
 

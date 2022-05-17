@@ -5,7 +5,7 @@ import { mockSizes } from "./__mocks__/sizes.js";
 const FAILURE_RATE = 0;
 
 const getApiData = (data, errorMessage) => {
-  const delay = Math.floor(Math.random() * 5000);
+  const delay = Math.floor(Math.random() * 500);
   const error = Math.random() < FAILURE_RATE;
 
   return new Promise((resolve, reject) => {

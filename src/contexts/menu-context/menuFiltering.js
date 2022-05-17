@@ -9,7 +9,6 @@ const itemSortBy = (itemA, itemB) => {
   return 0;
 };
 
-
 const filterItem = (item, filters) => {
   let filtered = filters.every((filter) => {
     return filter.predicate(item, filter.key, filter.value);

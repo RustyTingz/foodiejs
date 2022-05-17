@@ -1,19 +1,19 @@
-
-
+import { useMenu } from "../../contexts/menu-context";
+import classes from "./Menu.module.css";
 
 const MenuSort = () => {
-
-  const onSortMenu = (sortBy) => {
-    console.log(sortBy);
-  };
+  const { sortBy, sortMenu } = useMenu();
 
   return (
-    <>
-      <button onClick={() => onSortMenu("name")}>Name</button>
-      <button onClick={() => onSortMenu("category")}>Category</button>
-      <button onClick={() => onSortMenu(undefined)}>RESET</button>
-    </>
+    <div>
+      <div>Sort By: {sortBy}</div>
+      <div className={classes["menu__action"]}>
+        <button onClick={() => sortMenu("name")}>Name</button>
+        <button onClick={() => sortMenu("category")}>Category</button>
+        <button onClick={() => sortMenu(undefined)}>RESET</button>
+      </div>
+    </div>
   );
 };
- 
+
 export default MenuSort;

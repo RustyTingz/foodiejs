@@ -1,14 +1,14 @@
-import { useEffect, useState } from "react";
-import { menuApi } from "../../api/menuApi";
+import { useEffect } from "react";
+import { useMenu } from "../../contexts/menu-context";
 import classes from "./Menu.module.css";
 import MenuItemCard from "./MenuItemCard";
 
 const Menu = () => {
-  const [menu, setMenu] = useState([]);
-
+  const { menu, fetchMenu } = useMenu();
+  
   useEffect(() => {
-    menuApi.getMenu().then((r) => setMenu(r));
-  }, []);
+    fetchMenu();
+  }, [fetchMenu]);
 
   return (
     <section className={classes.menu}>
