@@ -2,8 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./App.css";
 import { BrowserRouter, Link, Routes, Route } from "react-router-dom";
-import CartContextReducer from "./containers/CartContextReducer/CartContextReducer";
-import CartContextHook from "./containers/CartContextHook/CartContextHook";
+import CartContextReducer from "./pages/CartContextReducer/CartContextReducer";
+import CartContextHook from "./pages/CartContextHook/CartContextHook";
 
 const App = () => {
   return (
