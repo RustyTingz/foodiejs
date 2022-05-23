@@ -1,0 +1,7 @@
+.parcel-cache
+.vscode
+coverage
+dist
+node_modules
+static
+tmp
